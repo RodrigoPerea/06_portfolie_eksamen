@@ -165,6 +165,26 @@ h3 {
   z-index: -50;
 }
 
+/* cv tekst/main */
+.cv-container {
+  display: flex;
+  color: white;
+}
+.erfaring {
+  flex-direction: row;
+}
+.skole {
+  margin-left: 150px;
+}
+.cv-container h2 {
+  margin: 35px 0 35px;
+}
+.cv-container .cv-erfaring {
+  margin-top: 25px;
+}
+.cv-main-container {
+  margin-left: 300px;
+}
 /* billede */
 .side-pres .rodrigo {
   margin-bottom: 20px;
