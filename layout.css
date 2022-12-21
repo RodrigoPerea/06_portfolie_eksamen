@@ -107,26 +107,26 @@ nav li:hover {
   padding-bottom: 500px;
 }
 
-.pink {
+.billede-forside {
   background-color: #52024e;
 }
-.pink img {
+.billede-forside img {
   display: block;
   width: 100%;
   height: 500px;
   /*   border-radius: 50%; */
   margin: 0 auto;
 }
-.grey {
+.text {
   background-color: rgb(23, 23, 23);
   box-shadow: 0 0px 20px 0 var(--custom-black);
 }
-.grey p,
+.text p,
 h3 {
   color: rgb(172, 172, 172);
   padding-left: 20px;
 }
-.grey h3 {
+.text h3 {
   padding-top: 30px;
 }
 /* nederste del forside */
@@ -151,7 +151,9 @@ h3 {
 /* cv design */
 /* side-bar */
 .side-pres {
-  background: #52024e;
+  background: #52024e00;
+  /* background-color: white; */
+  border-right: 2px solid #f5f5f5;
   position: fixed;
   top: 0;
   left: 0;
