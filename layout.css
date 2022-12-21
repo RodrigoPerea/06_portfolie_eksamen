@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: black;
+}
+
+/* menu */
+.nav-bar-menu {
+  display: flex;
+  height: 8vh;
+  /*   width: 100%; */
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+}
+.logo {
+  padding: 0 2rem;
+  border-right: 2px solid #f5f5f5;
+}
+.logo:hover {
+  scale: 1.05;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.nav-elementer {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+nav li:hover {
+  scale: 1.2;
+  transition-duration: 0.3s;
+}
+/* burgeren */
+.burger {
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: rgb(210, 210, 210);
+  transition: transform 0.7s ease, opacity 0.75s ease;
+}
+
+/* burger menu fukntion, skulle rotere for at forme mit kryds */
+.nav-bar-menu.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+}
+.nav-bar-menu.show .line2 {
+  opacity: 0;
+}
+.nav-bar-menu.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+.nav-bar-menu.show .nav-elementer {
+  transform: translateX(0%);
+}
+
+/* responsiv burger */
+@media screen and (max-width: 800px) {
+  .nav-elementer {
+    width: 60%; /* så jeg har noget mellemrum mellem mine menu punkter på en midnre skærm */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* under 600px vil mine links elementer blive plaseret under min navigations bar, og til højre */
+  .burger {
+    display: block;
+  }
+  .nav-elementer {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* forsdie */
+
+/* øverste del */
+.forside_container {
+  display: flex;
+  margin: 50px 50px;
+}
+.box {
+  width: 50%;
+  height: 50px;
+  background-color: gray;
+  padding-bottom: 500px;
+}
+
+.pink {
+  background-color: #52024e;
+}
+.pink img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  /*   border-radius: 50%; */
+  margin: 0 auto;
+}
+.grey {
+  background-color: rgb(23, 23, 23);
+  box-shadow: 0 0px 20px 0 var(--custom-black);
+}
+.grey p,
+h3 {
+  color: rgb(172, 172, 172);
+  padding-left: 20px;
+}
+.grey h3 {
+  padding-top: 30px;
+}
+/* nederste del forside */
+
+.project-container {
+  display: flex;
+  margin: 20px 20px;
+  gap: 20px;
+}
+.box-projects {
+  height: 100%;
+  width: 50%;
+}
+.project-container img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  /* s */
+  margin: 0 auto;
+}
+
+/* cv design */
+/* side-bar */
+.side-pres {
+  background: #52024e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  padding-top: 100px;
+  overflow-x: hidden;
+  z-index: -50;
+}
+
+/* billede */
+.side-pres .rodrigo {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.side-pres .rodrigo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+/* teskt på sidebaren */
+.side-pres h5 {
+  color: white;
+  padding: 10px 0px 2px 10px;
+}
+.side-pres p {
+  color: white;
+  padding: 0 10px;
+}
+/* linkedinknap side bar */
+button {
+  padding: 0 10px;
+}

@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* side menu design*/
+.top-menu .side-menu {
+  background: #52024e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+/* .top-bar {
+  background: #52024e;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  z-index: 10;
+} */
+/* .top-bar .logo {
+  width: 250px;
+
+  font-weight: 700;
+  padding: 0 25px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-right: 2px solid #f5f5f5;
+} */
+.top-bar .menu {
+  width: calc(100% - 250px);
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 
+.top-bar .hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+} */
+
+/* .top-bar .hamburger:hover {
+  color: #cf450a;
+} */
+
+/* .top-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #323233;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.125);
+  display: flex;
+  align-items: center;
+} */
+/* .top-bar p {
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+} */
+
+/* virker ikke */
+@media (max-height: 450px) {
+  .side-menu {
+    padding-top: 15px;
+  }
+  .side-menu a {
+    font-size: 18px;
+  }
+}
+
+/* menu billede og tekst */
+.top-menu .side-menu .rodrigo {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.top-menu .side-menu .rodrigo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.top-menu .side-menu .rodrigo p {
+  font-size: 14px;
+}
+.top-menu .side-menu .rodrigo h3 {
+  margin: 10px 0 5px;
+}
+/* menu links design */
+
+.top-menu .side-menu ul li a {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #800b97;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+/* 
+.top-menu .side-menu ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+} */
+.top-menu .side-menu ul li a:hover,
+.top-menu .side-menu ul li a.active {
+  color: #ffffff;
+
+  background: rgb(179, 13, 167);
+  border-right: 2px solid #800b97;
+}
+
+.top-menu .side-menu ul li a:hover:before,
+.top-menu .side-menu ul li a.active:before {
+  display: block;
+}
+
+/* forside galleri */
+figcaption {
+  z-index: 1000;
+  position: relative;
+  left: 2vw;
+  top: -4vw;
+  max-width: fit-content;
+}
+#forside_galleri {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  filter: drop-shadow(0 0 10px var(--custom-black));
+}
+#forside_galleri > figure:hover {
+  scale: 1.03;
+  transition-duration: 0.3s;
+  filter: drop-shadow(0 0 20px var(--custom-black));
+  z-index: 10;
+}
+#forside_galleri > figure {
+  scale: 1;
+  transition-duration: 0.3s;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#atv_safari_billede {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+#rapelling_billede {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+#julefrokost_billede {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+}
+#sommerfest_billede {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+#firmatur_billede {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+/* menu */
+/* header {
+  height: 108px;
+  padding-inline: 2rem;
+} */
+
+/* .logo {
+  background-image: url("picturs/logo.png");
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 82/120;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+} */
+/* nav .logo:hover {
+  scale: 1.1;
+  transition-duration: 0.3s;
+}
+nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 108px 1fr;
+}
+nav ul {
+  width: 100%;
+  justify-content: right;
+  display: grid;
+  flex-direction: row;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  list-style: none;
+  margin-block: auto;
+}
+nav a {
+  color: var(--custom-white);
+  font-family: ligurino, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.9rem;
+  text-decoration: none;
+}
+nav li:hover {
+  scale: 1.2;
+  transition-duration: 0.3s;
+  filter: drop-shadow(0 0 10px var(--custom-black));
+}
+nav li {
+  scale: 1;
+  transition-duration: 0.3s;
+}
+ */
