@@ -1,3 +1,13 @@
+/* farver */
+html {
+  --custom-text-color: #3d3d3d;
+  --custom-text-headliners: #910686;
+  --custom-borders: #910686;
+  --custom-hover: #c308b3;
+  --custom-black: #17171a;
+  --custom-box: #171717;
+}
+
 /* fonts */
 
 h1 {
@@ -6,6 +16,7 @@ h1 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 2.2rem;
+  color: var(--custom-text-color);
 }
 h2 {
   font-family: "Barlow Condensed", sans-serif;
@@ -13,6 +24,7 @@ h2 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 2rem;
+  color: var(--custom-text-color);
 }
 h3 {
   font-family: "Barlow Condensed", sans-serif;
@@ -20,6 +32,7 @@ h3 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1.6rem;
+  color: var(--custom-text-color);
 }
 h4 {
   font-family: "Barlow Condensed", sans-serif;
@@ -27,6 +40,7 @@ h4 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1.4rem;
+  color: var(--custom-text-color);
 }
 h5 {
   font-family: "Barlow Condensed", sans-serif;
@@ -34,6 +48,7 @@ h5 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1.2rem;
+  color: var(--custom-text-color);
 }
 h6 {
   font-family: "Barlow Condensed", sans-serif;
@@ -41,6 +56,7 @@ h6 {
   font-style: normal;
   line-height: 1.4rem;
   font-size: 1rem;
+  color: var(--custom-text-color);
 }
 .logo {
   font-family: "Barlow Condensed", sans-serif;
@@ -48,9 +64,11 @@ h6 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1.25rem;
-  color: white;
+  /* color: rgb(0, 0, 0); */
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  border-right: 2px solid #000000;
+  color: var(--custom-text-color);
 }
 button {
   font-family: "Barlow Condensed", sans-serif;
@@ -58,24 +76,27 @@ button {
   font-style: normal;
   line-height: 1.2rem;
   /*   font-size: 1.25rem; */
-  color: white;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-/* figcaption {
+
+td {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2vw;
-  color: white;
-  filter: drop-shadow(0 0 10px var(--custom-black));
-} */
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  color: var(--custom-text-color);
+}
+
 p {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1rem;
+  color: var(--custom-text-color);
 }
 a {
   font-family: "Barlow Condensed", sans-serif;
@@ -83,5 +104,32 @@ a {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1.3rem;
-  color: white;
+  /* color: rgb(0, 0, 0); */
+  color: var(--custom-text-color);
 }
+/* knapper design og font */
+button {
+  padding: 0 10px;
+  margin: 10px 10px;
+  width: 35%;
+  padding: 10px 0;
+  background: transparent;
+  color: var(--custom-white);
+  font-size: 9px;
+  border: 1px solid;
+  border-color: var(--custom-text);
+  border-radius: 8px;
+  margin-top: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* .cv-knap:hover {
+  background: #c308b3;
+  border: none;
+  color: white;
+  cursor: pointer;
+} */

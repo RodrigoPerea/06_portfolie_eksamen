@@ -6,7 +6,8 @@
   text-decoration: none;
 }
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  height: 100vh; /* skulle ahve hjulpet med at placere footer i bunden. Virker ikke. Footer fået en pixed position istedet */
 }
 
 /* menu */
@@ -16,12 +17,11 @@ body {
   /*   width: 100%; */
   justify-content: space-between;
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   align-items: center;
 }
 .logo {
   padding: 0 2rem;
-  border-right: 2px solid #f5f5f5;
 }
 .logo:hover {
   scale: 1.05;
@@ -48,7 +48,7 @@ nav li:hover {
   height: 2px;
   width: 35px;
   margin: 0.5rem 0;
-  background: rgb(210, 210, 210);
+  background: rgb(45, 45, 45);
   transition: transform 0.7s ease, opacity 0.75s ease;
 }
 
@@ -82,14 +82,20 @@ nav li:hover {
     position: fixed;
     top: 8vh;
     right: 0;
-    height: 92vh;
-    width: 50%;
+    height: 100%;
+    width: 40%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 1s ease;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #910685;
+    cursor: pointer;
+    z-index: 5000;
+  }
+  .burger-text {
+    color: white;
   }
 }
 
@@ -103,30 +109,27 @@ nav li:hover {
 .box {
   width: 50%;
   height: 50px;
-  background-color: gray;
+  background-color: #808080;
   padding-bottom: 500px;
 }
 
-.billede-forside {
-  background-color: #52024e;
-}
 .billede-forside img {
   display: block;
   width: 100%;
   height: 500px;
-  /*   border-radius: 50%; */
   margin: 0 auto;
 }
 .text {
-  background-color: rgb(23, 23, 23);
+  background-color: #171717;
   box-shadow: 0 0px 20px 0 var(--custom-black);
 }
 .text p,
 h3 {
-  color: rgb(172, 172, 172);
+  color: #d5d5d5;
   padding-left: 20px;
 }
 .text h3 {
+  color: #d5d5d5;
   padding-top: 30px;
 }
 /* nederste del forside */
@@ -150,10 +153,40 @@ h3 {
 
 /* cv design */
 /* side-bar */
+/* billede på cv sidebar*/
+.side-pres .rodrigo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.side-pres .rodrigo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+
+.kontakt-aditionel {
+  flex-basis: 40%;
+  padding: 40px;
+}
+.cv-possition {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+}
+.cv-year {
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  color: #910686;
+}
+
 .side-pres {
   background: #52024e00;
   /* background-color: white; */
-  border-right: 2px solid #f5f5f5;
+  border-right: 2px solid #bdbdbd48;
   position: fixed;
   top: 0;
   left: 0;
@@ -163,18 +196,44 @@ h3 {
   padding-top: 100px;
   overflow-x: hidden;
   z-index: -50;
+  text-align: center;
 }
 
-/* cv tekst/main */
+.side-pres h5 {
+  color: rgb(0, 0, 0);
+  padding: 10px 0px 2px 10px;
+}
+.side-pres p {
+  color: rgb(0, 0, 0);
+  padding: 0 10px;
+}
+.rodrigo h3 {
+  color: #910686;
+}
+.rodrigo p {
+  font-weight: 500;
+}
+/* linkedinknap side bar  - Virker ikke*/
+.linkedin {
+  padding: 0 10px;
+  margin: 10px 10px;
+}
+.linkedin:hover {
+  background: #c308b3;
+  border: none;
+  color: white;
+}
+
+/* cv erfaring tekst */
 .cv-container {
   display: flex;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .erfaring {
   flex-direction: row;
 }
 .skole {
-  margin-left: 150px;
+  margin-left: 90px;
 }
 .cv-container h2 {
   margin: 35px 0 35px;
@@ -185,50 +244,47 @@ h3 {
 .cv-main-container {
   margin-left: 300px;
 }
-/* cv knappen */
-.cv-knap {
-  width: 35%;
-  padding: 10px 0;
-  background: transparent;
-  color: var(--custom-white);
-  font-size: 9px;
-  border: 1px solid;
-  border-color: #c308b3;
-  border-radius: 8px;
-  margin-top: 35px;
-  cursor: pointer;
-  transition: 0.5s;
-  font-size: 13px;
-  font-weight: bold;
-  margin-top: 10px;
+.cv-erfaring h5 {
+  color: #910686;
 }
+.cv-erfaring h6 {
+  border-bottom: 1px solid #9106858a;
+  width: 50%;
+  padding: 5px 5px;
+}
+tr td:first-child {
+  /* Så dne kun adder padding å den første data i rækken. altså, "email", "telefon" etc. */
+  padding-right: 20px;
+}
+tr td {
+  padding-top: 15px;
+}
+.cv-possition {
+  position: relative;
+  border-bottom: 1px solid #a7049f;
+  border-width: 2px;
+  justify-content: flex-start;
+  width: 85%;
+  padding: 50px 0 10px 0;
+}
+
+/* cv knapperne */
+.cv-knap {
+  width: 160px;
+  display: none;
+}
+
 .cv-knap:hover {
   background: #c308b3;
   border: none;
+  color: white;
 }
-/* billede på cv sidebar*/
-.side-pres .rodrigo {
-  margin-bottom: 20px;
+/* footer */
+footer {
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
   text-align: center;
-  color: white;
-}
-.side-pres .rodrigo img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-/* teskt på sidebaren */
-.side-pres h5 {
-  color: white;
-  padding: 10px 0px 2px 10px;
-}
-.side-pres p {
-  color: white;
-  padding: 0 10px;
-}
-/* linkedinknap side bar */
-button {
-  padding: 0 10px;
+  margin-top: 25px;
 }
