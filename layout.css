@@ -7,7 +7,7 @@
 }
 body {
   background-color: rgb(255, 255, 255);
-  height: 100vh; /* skulle ahve hjulpet med at placere footer i bunden. Virker ikke. Footer fået en pixed position istedet */
+  /* height: 100vh;  */ /* skulle ahve hjulpet med at placere footer i bunden. Virker ikke. Footer fået en pixed position istedet */
 }
 
 /* menu */
@@ -279,6 +279,71 @@ tr td {
   border: none;
   color: white;
 }
+
+/* porfoliodesign */
+.portfolio-galleri {
+  display: grid;
+  /*   grid-template-columns: auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+  /* grid-gap: 20px;  */
+  grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+  grid-gap: 5px;
+  box-sizing: border-box;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+}
+
+figure {
+  border: 1.5px #910686 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
+.portfolio-galleri img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  background-color: #222;
+  padding: 3px;
+  text-align: center;
+  max-width: fit-content;
+}
+.portfolio-galleri > figure:hover {
+  scale: 1.03;
+  transition-duration: 0.1s;
+  filter: drop-shadow(0 0 20px var(--custom-black));
+  /*   z-index: 10; */
+}
+@media (max-width: 700px) {
+  .portfolio-galleri {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  /*   figcaption {
+    font-size: 5vw;
+    left: 2vw;
+    top: -8vw;
+  } */
+  .portfolio-galleri {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+/* .portfolio-galleri img {
+  width: 100%;
+  height: 100%;
+} */
+
 /* footer */
 footer {
   position: inherit;
