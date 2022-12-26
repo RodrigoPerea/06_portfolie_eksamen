@@ -337,8 +337,24 @@ figcaption {
   align-items: center;
   color: white;
 }
+.popupwindow a {
+  color: white;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px 30px;
+  background: #910686;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 27px;
+  text-decoration: none;
+}
 .popupwindow p {
   color: white;
+  margin-top: 10px;
 }
 .popupwindow h1 {
   color: white;
@@ -366,25 +382,16 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
 }
+/* .popup-container {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 .open-popup {
   visibility: visible;
   transform: scale(1);
   transition-duration: 0.2s;
-}
-.popupwindow a {
-  color: white;
-  justify-content: center;
-  margin-top: 50px;
-  padding: 10px 30px;
-  background: #910686;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 27px;
-  text-decoration: none;
 }
 
 .luk {
@@ -410,13 +417,30 @@ figcaption {
 }
 
 .img_group {
-  display: flex;
-  flex-flow: wrap;
+  /*  display: flex; */
+  /*  flex-flow: wrap; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   justify-content: center;
 }
 .scrollable-til-popup {
   overflow-y: auto;
+}
+.img_group a {
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 1px 1px;
+  background: #9106852b;
+  box-shadow: 0 0.5px 2px 0 #91068583, 0 0.2px 2px 0 #9106855d;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  /*   font-size: 15px;
+  font-weight: 500; */
+  border-radius: 2px;
+  text-decoration: none;
 }
 
 @media (max-width: 700px) {
@@ -434,17 +458,22 @@ figcaption {
     grid-template-rows: 1fr 1fr;
     padding-bottom: 0;
   }
+  .img_group img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 @media (max-width: 500px) {
   .portfolio-galleri {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
   .portfolio-galleri h1 {
     font-size: 25px;
     margin-top: 10px;
   }
-  .popupwindow a {
+  .img_group a {
     display: none;
   }
 }
