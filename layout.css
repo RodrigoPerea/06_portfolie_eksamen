@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   /* height: 100vh;  */ /* skulle ahve hjulpet med at placere footer i bunden. Virker ikke. Footer fået en pixed position istedet */
 }
 
@@ -16,8 +16,8 @@ body {
   height: 8vh;
   /*   width: 100%; */
   justify-content: space-between;
-  color: white;
-  background-color: rgb(255, 255, 255);
+  color: #cdc3e6;
+  background-color: white;
   align-items: center;
 }
 .logo {
@@ -120,16 +120,16 @@ nav li:hover {
   margin: 0 auto;
 }
 .text {
-  background-color: #171717;
+  background-color: #291b50;
   box-shadow: 0 0px 20px 0 var(--custom-black);
 }
 .text p,
 h3 {
-  color: #d5d5d5;
+  color: #cdc3e6;
   padding-left: 20px;
 }
 .text h3 {
-  color: #d5d5d5;
+  color: #cdc3e6;
   padding-top: 30px;
 }
 /* nederste del forside */
@@ -248,7 +248,7 @@ h3 {
   color: #910686;
 }
 .cv-erfaring h6 {
-  border-bottom: 1px solid #9106858a;
+  border-bottom: 1px solid #da1d57;
   width: 50%;
   padding: 5px 5px;
 }
@@ -261,7 +261,7 @@ tr td {
 }
 .cv-possition {
   position: relative;
-  border-bottom: 1px solid #a7049f;
+  border-bottom: 1px solid #da1d57;
   border-width: 2px;
   justify-content: flex-start;
   width: 85%;
@@ -275,7 +275,7 @@ tr td {
 }
 
 .cv-knap:hover {
-  background: #c308b3;
+  background: #da1d57;
   border: none;
   color: white;
 }
@@ -288,7 +288,7 @@ tr td {
   grid-template-rows: repeat(2, 1fr);
   /* grid-gap: 20px;  */
   /*  grid-template-columns: fit-content(300px) fit-content(300px) 1fr; */
-  /*   grid-gap: 5px; */
+  grid-gap: 5px;
   /*   box-sizing: border-box;
   height: 200px;
   width: 100%;
@@ -296,7 +296,7 @@ tr td {
 }
 
 figure {
-  border: 1.5px #910686 solid;
+  border: 1.5px #da1d57 solid;
   display: flex;
   flex-flow: column;
   padding: 5px;
@@ -311,7 +311,7 @@ figure {
 }
 
 figcaption {
-  background-color: #222;
+  background-color: #da1d57;
   padding: 3px;
   text-align: center;
   max-width: fit-content;
@@ -342,7 +342,7 @@ figcaption {
   justify-content: center;
   margin-top: 50px;
   padding: 10px 30px;
-  background: #910686;
+  background: #da1d57;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 0;
   outline: none;
@@ -364,7 +364,7 @@ figcaption {
   transition-duration: 0.3s;
 }
 .popupwindow {
-  background-color: #222;
+  background-color: #291b50;
   border-radius: 15px;
   width: 95vw;
   height: 650px;
@@ -397,7 +397,7 @@ figcaption {
   height: 40px;
   padding-left: 5px;
   padding-right: 5px;
-  background: #910686;
+  background: #da1d57;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   line-height: 15px;
@@ -458,4 +458,5 @@ footer {
   padding: 1rem;
   text-align: center;
   margin-top: 25px;
+  color: #34313a;
 }

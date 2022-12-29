@@ -1,11 +1,14 @@
 /* farver */
 html {
-  --custom-text-color: #3d3d3d;
+  --custom-text-color: #34313a;
   --custom-text-headliners: #910686;
   --custom-borders: #910686;
   --custom-hover: #c308b3;
   --custom-black: #17171a;
   --custom-box: #171717;
+  /* test */
+  ---costom-bacgkground: #291b50;
+  --costom-other: #da1d57;
 }
 
 /* fonts */
@@ -65,7 +68,7 @@ figcaption {
   line-height: 1.4rem;
   font-size: 0.9rem;
   /*  color: var(--custom-text-color);*/
-  color: white;
+  color: #cdc3e6;
 }
 .logo {
   font-family: "Barlow Condensed", sans-serif;
@@ -75,7 +78,7 @@ figcaption {
   font-size: 1.25rem;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  border-right: 2px solid #000000;
+  border-right: 2px solid #34313a;
   color: var(--custom-text-color);
 }
 button {
@@ -133,6 +136,14 @@ button {
   font-size: 13px;
   font-weight: bold;
   margin-top: 10px;
+}
+footer {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  color: var(--custom-text-color);
 }
 
 /* .cv-knap:hover {
