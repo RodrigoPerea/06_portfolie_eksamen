@@ -90,7 +90,7 @@ nav li:hover {
     transform: translateX(100%);
     transition: transform 1s ease;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-    background-color: #910685;
+    background-color: #291b50;
     cursor: pointer;
     z-index: 5000;
   }
@@ -100,7 +100,19 @@ nav li:hover {
 }
 
 /* forsdie */
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 5px; /*margin i bunden af mine overskrifter*/
+}
 
+@media (min-widt: 900px) {
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: auto;
+  }
+}
 /* øverste del */
 .forside_container {
   display: flex;
@@ -151,8 +163,27 @@ h3 {
   padding-top: 30px;
 }
 /* nederste del forside */
-
-.project-container {
+main h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+main h2 {
+  font-size: 1.5rem;
+}
+.grid_1-1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* border-radius: 1rem; */
+}
+main {
+  margin-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* .project-container {
   display: flex;
   margin: 20px 20px;
   gap: 20px;
@@ -165,10 +196,32 @@ h3 {
   display: block;
   width: 200px;
   height: 200px;
-  /* s */
+  /* s 
   margin: 0 auto;
+} */
+.projekt-container-forside {
+  cursor: pointer;
 }
+@media (min-width: 900px) {
+  .projekter-all-forside-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
 
+  .projekt-container-forside {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.066), 0 6px 20px 0 rgba(0, 0, 0, 0.106);
+  }
+
+  .projekt-container-forside > :last-child {
+    margin-top: auto;
+  }
+}
+img {
+  width: 100%;
+}
 /* cv design */
 /* side-bar */
 /* billede på cv sidebar*/
@@ -198,7 +251,7 @@ h3 {
   font-style: normal;
   line-height: 1.6rem;
   font-size: 1.2rem;
-  color: #910686;
+  color: #da1d57;
 }
 
 .side-pres {
@@ -226,7 +279,7 @@ h3 {
   padding: 0 10px;
 }
 .rodrigo h3 {
-  color: #910686;
+  color: #291b50;
 }
 .rodrigo p {
   font-weight: 500;
@@ -263,10 +316,10 @@ h3 {
   margin-left: 300px;
 }
 .cv-erfaring h5 {
-  color: #910686;
+  color: #291b50;
 }
 .cv-erfaring h6 {
-  border-bottom: 1px solid #da1d57;
+  border-bottom: 1px solid #291b50;
   width: 50%;
   padding: 5px 5px;
 }
@@ -279,7 +332,7 @@ tr td {
 }
 .cv-possition {
   position: relative;
-  border-bottom: 1px solid #da1d57;
+  border-bottom: 1px solid #291b50;
   border-width: 2px;
   justify-content: flex-start;
   width: 85%;
@@ -289,11 +342,11 @@ tr td {
 /* cv knapperne */
 .cv-knap {
   width: 160px;
-  display: none;
+  /* display: none; */
 }
 
 .cv-knap:hover {
-  background: #da1d57;
+  background: #291b50;
   border: none;
   color: white;
 }
@@ -309,7 +362,7 @@ tr td {
 }
 
 figure {
-  border: 1.5px #da1d57 solid;
+  border: 1.5px #291b50 solid;
   display: flex;
   flex-flow: column;
   padding: 5px;
@@ -321,7 +374,7 @@ figure {
 }
 
 figcaption {
-  background-color: #da1d57;
+  background-color: #291b50;
   padding: 3px;
   text-align: center;
   max-width: fit-content;

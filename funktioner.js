@@ -13,12 +13,16 @@ function nav() {
 
 /* portfolie popup */
 /* 02_web */
-let popupwindow1 = document.getElementById("web");
+const popupwindow1 = document.getElementById("web");
+const body = document.getElementsByTagName("body")[0];
+popupwindow1.addEventListener("click", closePopupWeb);
 function openPopUpWeb() {
   popupwindow1.classList.add("open-popup");
+  body.classList.add("noScroll");
 }
 function closePopupWeb() {
   popupwindow1.classList.remove("open-popup");
+  body.classList.remove("noScroll");
 }
 /* 03_ux */
 let popupwindow2 = document.getElementById("ux");
