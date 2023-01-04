@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolie_remake.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Portfolie</title>
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="nav-bar-menu">
+        <a href="index.html">
+            <div class="logo">Portfolie MMD 2022</div>
+        </a>
+        <ul class="nav-elementer">
+            <li>
+                <a href="index.html" class="active burger-text">Forside</a>
+            </li>
+            <li>
+                <a href="potfolie_remake.html" class="burger-text">Portfolie</a>
+            </li>
+            <li>
+                <a href="cv.html" class="burger-text">Cv</a>
+            </li>
+            <li>
+                <a href="om.html" class="burger-text">Om mig</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+            <div class="line line4"></div>
+        </div>
+    </nav>
+
+    <div class="portfolie_grid">
+
+        <!-- web -->
+        <div class="billede_knap" onclick='openPopUpWeb()'>
+            <img src="picturs/video-shaper-mood-board.png" alt="sceendump af xd">
+            <div class="billede_tekst_portfolie">
+                <h1>02_WEB</h1>
+                <p>Emne om noget vigtigt</p>
+            </div>
+        </div>
+
+        <!-- popup window for WEB -->
+        <div class=" popup-overlay" id="web">
+            <div class="popup-container">
+                <button type="button" class="luk_to " onclick="closePopupWeb()">&times;</button>
+                <div class="popup-header">
+                    <h1>02_web</h1>
+                </div>
+                <div class="popup-content">
+                    <div class="popup-text">
+                        <p>
+                            Alle projekter eller opgaver præsenteres vha. en kort, konkret beskrivelse af dit projekts
+                            eller
+                            din
+                            opgaves fokus, din proces, hvad din rolle var og hvad du lærte. <br> <br>
+                            I tema X har vi lært om forskellige layoutprincipper: A, B, C (her demonstrerer du viden)Jeg
+                            valgte
+                            at bruge princip B til at løse den efterfølgende opgave på følgende måde (her demonstrerer
+                            du
+                            færdighed). Jeg valgte at bruge denne løsning fremfor A & C fordi [...] (her demonstrerer du
+                            kompetence). <br> <br>
+
+                            I denne opgave blev vi introduceret til testmetoden X som går ud på... (her demonstrerer du
+                            viden).
+                            Jeg udførte testen på følgende måde [...] med følgende resultat [...] og det gav anledning
+                            til
+                            følgende ændringer [...] i mit design (her demonstrerer du færdighed). I det efterfølgende
+                            gruppeprojekt brugte vi igen testmetoden X, i forhold til at undersøge følgende [...] (her
+                            demonstrerer du kompetence). <br> <br>
+                            Vis gerne din proces, brug meget gerne screendumps, illustrationer, animationer, skitser mm.
+
+                        </p>
+                    </div>
+                    <div class="popup-galleri">
+                        <a href="picturs/video-shaper-how.png"> <img src="picturs/video-shaper-how.png"
+                                alt="sceenshot af website, under menu: how it works"></a>
+                        <a href="picturs/video-shaper-new-user.png"> <img src="picturs/video-shaper-new-user.png"
+                                alt="sceenshot af website, under menu: opret bruger"></a>
+                        <a href="picturs/video-shaper-mood.png"> <img src="picturs/video-shaper-mood.png"
+                                alt="Sceenshot af moodboard"></a>
+                        <a href="picturs/video-shaper-showreel.png"> <img src="picturs/video-shaper-showreel.png"
+                                alt="SCeenshot af xd, design af showreel"></a>
+                    </div>
+                </div>
+                <div class="popup-futter">
+                    <a class="knap-popup" href="http://nordiclive.dk/kea/02_web/02_emnesite/emnesite/">Gå til
+                        opgaveløsning
+                        emnesite</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- UX -->
+
+        <div class="billede_knap" onclick='openPopUpUx()'>
+            <img src="picturs/shirtitup.png" alt="sceendump af xd">
+            <div class="billede_tekst_portfolie">
+                <h1>03_UX</h1>
+                <p>Emne om noget vigtigt</p>
+            </div>
+        </div>
+
+        <!-- popup window for UX -->
+        <div class="popup-overlay" id="ux">
+            <div class="popup-container">
+                <button type="button" class="luk_to " onclick="closePopupWeb()">&times;</button>
+                <div class="popup-header">
+                    <h1>03_ux</h1>
+                </div>
+                <div class="popup-content">
+                    <div class="popup-text">
+                        <p>
+                            Alle projekter eller opgaver præsenteres vha. en kort, konkret beskrivelse af dit projekts
+                            eller
+                            din
+                            opgaves fokus, din proces, hvad din rolle var og hvad du lærte. <br> <br>
+                            I tema X har vi lært om forskellige layoutprincipper: A, B, C (her demonstrerer du viden)Jeg
+                            valgte
+                            at bruge princip B til at løse den efterfølgende opgave på følgende måde (her demonstrerer
+                            du
+                            færdighed). Jeg valgte at bruge denne løsning fremfor A & C fordi [...] (her demonstrerer du
+                            kompetence). <br> <br>
+
+                            I denne opgave blev vi introduceret til testmetoden X som går ud på... (her demonstrerer du
+                            viden).
+                            Jeg udførte testen på følgende måde [...] med følgende resultat [...] og det gav anledning
+                            til
+                            følgende ændringer [...] i mit design (her demonstrerer du færdighed). I det efterfølgende
+                            gruppeprojekt brugte vi igen testmetoden X, i forhold til at undersøge følgende [...] (her
+                            demonstrerer du kompetence). <br> <br>
+                            Vis gerne din proces, brug meget gerne screendumps, illustrationer, animationer, skitser mm.
+
+                        </p>
+                    </div>
+                    <div class="popup-galleri">
+                        <a href="picturs/shit-it-up-user.png"> <img src="picturs/shit-it-up-user.png"
+                                alt="Sceenshot af XD, brugerpanelet"></a>
+                        <a href="picturs/shirt-it-up-StyleTyle.png"> <img src="picturs/shirt-it-up-StyleTyle.png"
+                                alt="Sceenshot af XD, styletyle"></a>
+                        <a href="picturs/shirt-it-up-design-fuktion.png"><img
+                                src="picturs/shirt-it-up-design-fuktion.png"
+                                alt="Sceenshot af XD, upload filer billedet"></a>
+                        <a href="picturs/shirt-it-up-xd-sceen-shot.png"><img src="picturs/shirt-it-up-xd-sceen-shot.png"
+                                alt="Sceenshot af XD, popup vinduer"></a>
+                    </div>
+                </div>
+                <div class="popup-futter">
+                    <a class="knap-popup" href="Pitch_final_torsdag.pptx">Se pitch (Download PP)</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- animation  -->
+
+        <div class="billede_knap" onclick='openPopUpAn()'>
+            <img src="picturs/annimation.png" alt="sceendump af xd">
+            <div class="billede_tekst_portfolie">
+                <h1>04_ANIMATION</h1>
+                <p>Emne om noget vigtigt</p>
+            </div>
+        </div>
+
+        <!-- popup window for animation  -->
+        <div class="popup-overlay" id="animation">
+            <div class="popup-container">
+                <button type="button" class="luk_to " onclick="closePopupAn()">&times;</button>
+                <div class="popup-header">
+                    <h1>04_animation</h1>
+                </div>
+                <div class="popup-content">
+                    <div class="popup-text">
+                        <p>
+                            Alle projekter eller opgaver præsenteres vha. en kort, konkret beskrivelse af dit projekts
+                            eller
+                            din
+                            opgaves fokus, din proces, hvad din rolle var og hvad du lærte. <br> <br>
+                            I tema X har vi lært om forskellige layoutprincipper: A, B, C (her demonstrerer du viden)Jeg
+                            valgte
+                            at bruge princip B til at løse den efterfølgende opgave på følgende måde (her demonstrerer
+                            du
+                            færdighed). Jeg valgte at bruge denne løsning fremfor A & C fordi [...] (her demonstrerer du
+                            kompetence). <br> <br>
+
+                            I denne opgave blev vi introduceret til testmetoden X som går ud på... (her demonstrerer du
+                            viden).
+                            Jeg udførte testen på følgende måde [...] med følgende resultat [...] og det gav anledning
+                            til
+                            følgende ændringer [...] i mit design (her demonstrerer du færdighed). I det efterfølgende
+                            gruppeprojekt brugte vi igen testmetoden X, i forhold til at undersøge følgende [...] (her
+                            demonstrerer du kompetence). <br> <br>
+                            Vis gerne din proces, brug meget gerne screendumps, illustrationer, animationer, skitser mm.
+
+                        </p>
+                    </div>
+                    <div class="popup-galleri">
+                        <a href="picturs/shit-it-up-user.png"> <img src="picturs/indhold_vide_1.png"
+                                alt="stillbillede fra video"></a>
+                        <a href="picturs/shirt-it-up-StyleTyle.png"> <img src="picturs/indhold_video_2.png"
+                                alt="pilot video, med passtion for tegning"></a>
+                        <a href="picturs/shirt-it-up-design-fuktion.png"> <img src="picturs/indhold_vide_1.png"
+                                alt="stillbillede fra video"></a>
+                        <a href="picturs/shirt-it-up-xd-sceen-shot.png"><img src="picturs/indhold_video_2.png"
+                                alt="pilot video, med passtion for tegning"></a>
+                    </div>
+                </div>
+                <div class="popup-futter">
+                    <a class="knap-popup" href="http://www.nordiclive.dk/kea/04_animation/website/">Gå til
+                        opgaveløsning</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- indhold  -->
+
+        <div class="billede_knap" onclick='openPopUpIn()'>
+            <img src="picturs/indhold.png" alt="sceendump af video">
+            <div class="billede_tekst_portfolie">
+                <h1>05_INDHOLD</h1>
+                <p>Emne om noget vigtigt</p>
+            </div>
+        </div>
+
+
+
+        <!-- popup window for indhold  -->
+        <div class="popup-overlay" id="indhold">
+            <div class="popup-container">
+                <button type="button" class="luk_to " onclick="closePopupIn()">&times;</button>
+                <div class="popup-header">
+                    <h1>05_indhold</h1>
+                </div>
+                <div class="popup-content">
+                    <div class="popup-text">
+                        <p>
+                            Alle projekter eller opgaver præsenteres vha. en kort, konkret beskrivelse af dit projekts
+                            eller
+                            din
+                            opgaves fokus, din proces, hvad din rolle var og hvad du lærte. <br> <br>
+                            I tema X har vi lært om forskellige layoutprincipper: A, B, C (her demonstrerer du viden)Jeg
+                            valgte
+                            at bruge princip B til at løse den efterfølgende opgave på følgende måde (her demonstrerer
+                            du
+                            færdighed). Jeg valgte at bruge denne løsning fremfor A & C fordi [...] (her demonstrerer du
+                            kompetence). <br> <br>
+
+                            I denne opgave blev vi introduceret til testmetoden X som går ud på... (her demonstrerer du
+                            viden).
+                            Jeg udførte testen på følgende måde [...] med følgende resultat [...] og det gav anledning
+                            til
+                            følgende ændringer [...] i mit design (her demonstrerer du færdighed). I det efterfølgende
+                            gruppeprojekt brugte vi igen testmetoden X, i forhold til at undersøge følgende [...] (her
+                            demonstrerer du kompetence). <br> <br>
+                            Vis gerne din proces, brug meget gerne screendumps, illustrationer, animationer, skitser mm.
+
+                        </p>
+                    </div>
+                    <div class="popup-galleri">
+                        <a href="picturs/indhold_vide_1.png"><img src="picturs/indhold_vide_1.png"
+                                alt="stillbillede fra video"></a>
+                        <a href="picturs/indhold_video_2.png"><img src="picturs/indhold_video_2.png"
+                                alt="pilot video, med passtion for tegning"></a>
+                        <a href="picturs/indhold_vide_1.png"> <img src="picturs/indhold_vide_1.png"
+                                alt="stillbillede fra video"></a>
+                        <a href="picturs/indhold_video_2.png"><img src="picturs/indhold_video_2.png"
+                                alt="pilot video, med passtion for tegning"></a>
+                    </div>
+                </div>
+                <div class="popup-futter">
+                    <a class="knap-popup" href="http://nordiclive.dk/kea/05_indhold/02_redesign/">Gå til
+                        opgaveløsning</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>@Rodrigo production 2022</p>
+        </footer>
+        <script src="funktioner.js"></script>
+    </div>
+    <!-- </div> -->
+</body>
+
+
+</html>

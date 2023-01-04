@@ -8,6 +8,34 @@
 .noScroll {
   overflow: hidden;
 }
+.portfolie_grid {
+  display: grid;
+  /*  grid-template-columns: auto auto; */
+  grid-template-columns: repeat(2, 1fr);
+  /*   grid-template-rows: repeat(2, 1fr); */
+  /* margin-top: 50px; */
+  grid-gap: 40px;
+  margin: 10px 20px 0 20px;
+}
+@media (max-widt: 1740px) {
+  .portfolie_grid {
+    max-width: 250px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1180px) {
+  .portfolie_grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolie_grid h1 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .portfolie_grid p {
+    font-size: 15px;
+  }
+}
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -54,6 +82,30 @@ h1 {
   /*   column-count: 2;
   gap: 0.5rem; */
   /* columns: 16rem; */
+}
+
+.billede_knap {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px black solid;
+}
+.billede_knap .billede_tekst_portfolie {
+  position: absolute;
+  bottom: 0;
+  background: #291b50;
+  background: #291b50;
+  color: #000000;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.billede_knap:hover {
+  scale: 1.03;
+  transition-duration: 0.1s;
+  filter: drop-shadow(0 0 20px var(--custom-black));
+  z-index: 10;
 }
 
 .open-popup {

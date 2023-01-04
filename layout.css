@@ -7,14 +7,15 @@
 }
 body {
   background-color: white;
-  /* height: 100vh;  */ /* skulle ahve hjulpet med at placere footer i bunden. Virker ikke. Footer fået en pixed position istedet */
+}
+.noScroll {
+  overflow: hidden;
 }
 
 /* menu */
 .nav-bar-menu {
   display: flex;
   height: 8vh;
-  /*   width: 100%; */
   justify-content: space-between;
   color: #cdc3e6;
   background-color: white;
@@ -65,15 +66,18 @@ nav li:hover {
 .nav-bar-menu.show .nav-elementer {
   transform: translateX(0%);
 }
+.nav-bar-menu.show .line4 {
+  opacity: 0;
+}
 
 /* responsiv burger */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .nav-elementer {
-    width: 60%; /* så jeg har noget mellemrum mellem mine menu punkter på en midnre skærm */
+    min-width: 20%; /* så jeg har noget mellemrum mellem mine menu punkter på en midnre skærm */
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   /* under 600px vil mine links elementer blive plaseret under min navigations bar, og til højre */
   .burger {
     display: block;
@@ -83,14 +87,14 @@ nav li:hover {
     top: 8vh;
     right: 0;
     height: 100%;
-    width: 40%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     transform: translateX(100%);
     transition: transform 1s ease;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-    background-color: #291b50;
+    background-color: #291b50e4;
     cursor: pointer;
     z-index: 5000;
   }
@@ -100,121 +104,50 @@ nav li:hover {
 }
 
 /* forsdie */
+
 main {
   max-width: 1200px;
   margin-inline: auto;
-  padding: 5px; /*margin i bunden af mine overskrifter*/
-}
-
-@media (min-widt: 900px) {
-  main {
-    max-width: 1200px;
-    margin-inline: auto;
-    margin-top: auto;
-  }
-}
-/* øverste del */
-.forside_container {
-  display: flex;
-  width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  overflow: hidden;
-}
-@media screen and (max-width: 1180px) {
-  .forside_container {
-    display: flex;
-    /* width: 100%; */
-    /*    text-align: center; */
-    flex-direction: column;
-    overflow: hidden;
-  }
-  /*   .forside_container::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-}
-.box {
-  width: 50%;
-  height: 50px;
-  background-color: #808080;
-  padding-bottom: 500px;
-}
-
-.billede-forside img {
-  display: block;
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-}
-.text {
-  background-color: #291b50;
-  box-shadow: 0 0px 20px 0 var(--custom-black);
-}
-.text p,
-h3 {
-  color: #cdc3e6;
-  padding-left: 20px;
-}
-.text h3 {
-  color: #cdc3e6;
-  padding-top: 30px;
-}
-/* nederste del forside */
-main h1 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-main h2 {
-  font-size: 1.5rem;
-}
-.grid_1-1-1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  /* border-radius: 1rem; */
-}
-main {
-  margin-block: 3rem;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-/* .project-container {
-  display: flex;
-  margin: 20px 20px;
-  gap: 20px;
-}
-.box-projects {
-  height: 100%;
-  width: 50%;
-}
-.project-container img {
-  display: block;
-  width: 200px;
-  height: 200px;
-  /* s 
-  margin: 0 auto;
+  padding: 5px; /*margin i bunden af mine overskrifter
 } */
+}
 .projekt-container-forside {
+  margin: 25px 0 50px 0;
+  border: 1px #291b505d solid;
   cursor: pointer;
 }
+.projekt-container-forside h2 {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px 0 10px 0;
+}
+.projekt-container-forside p {
+  padding-bottom: 20px;
+}
+
+.knap-forside-projekt {
+  color: white;
+  justify-content: center;
+  background-color: #291b50;
+  padding: 10px 30px;
+  cursor: pointer;
+  /* border-radius: 15px; */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 @media (min-width: 900px) {
   .projekter-all-forside-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
   }
-
   .projekt-container-forside {
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.066), 0 6px 20px 0 rgba(0, 0, 0, 0.106);
   }
-
   .projekt-container-forside > :last-child {
     margin-top: auto;
   }
@@ -351,170 +284,33 @@ tr td {
   color: white;
 }
 
-/* porfoliodesign */
-.portfolio-galleri {
-  display: grid;
-  /*  grid-template-columns: auto auto; */
-  grid-template-columns: repeat(2, 1fr);
-  /*   grid-template-rows: repeat(2, 1fr); */
-  margin-top: 50px;
-  grid-gap: 5px;
-}
-
-figure {
-  border: 1.5px #291b50 solid;
+/* Om Mig sektion */
+.om_container {
   display: flex;
-  flex-flow: column;
-  padding: 5px;
-  /*   max-width: 220px; */
-  margin: auto;
-  text-align: center;
-  padding: 5px;
-  max-width: 980px;
-}
-
-figcaption {
-  background-color: #291b50;
-  padding: 3px;
-  text-align: center;
-  max-width: fit-content;
-}
-.portfolio-galleri > figure:hover {
-  scale: 1.03;
-  transition-duration: 0.1s;
-  filter: drop-shadow(0 0 20px var(--custom-black));
-  z-index: 10;
-}
-
-/* pop-up på portfolie */
-.popup-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40vh;
-  gap: 20px;
   width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 50px;
-  grid-auto-flow: column;
-  align-items: center;
-  color: white;
-}
-.knap-popup-cv {
-  color: white;
-  justify-content: center;
-  margin-top: 50px;
-  padding: 10px 30px;
-  background: #da1d57;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 27px;
-  text-decoration: none;
-}
-.popupwindow p {
-  color: white;
-  margin-top: 10px;
-}
-.popupwindow h1 {
-  color: white;
-}
-.popupwindow a:hover {
-  scale: 1.2;
-  transition-duration: 0.3s;
-}
-.popupwindow {
+
   background-color: #291b50;
-  border-radius: 15px;
-  width: 95vw;
-  height: 650px;
-  position: fixed;
-  top: 15%;
-  left: 3%;
-  transform: translateX(-50%);
-  color: var(--custom-white);
-  transform: scale(0.1);
-  transition: 0.1s;
-  visibility: hidden;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-  display: flex;
   flex-wrap: wrap;
+  margin: 20px;
 }
-
-.open-popup {
-  visibility: visible;
-  transform: scale(1);
-  transition-duration: 0.2s;
+.om_billede {
+  flex-basis: 100%;
+  padding: 20px;
 }
-
-.luk {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background: #da1d57;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  line-height: 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 30px;
-  color: white;
+.om_tekst {
+  flex-basis: 100%;
+  padding: 20px;
 }
-.luk:hover {
-  scale: 1.2;
-  transition-duration: 0.3s;
+.om_tekst p {
+  color: #cdc3e6;
 }
-
-.img_group {
-  /*  display: flex; */
-  /*  flex-flow: wrap; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  justify-content: center;
+.om_tekst h3 {
+  color: rgb(210, 210, 210);
 }
-.popupwindow img {
-  max-width: 250px;
-  max-height: 150px;
-}
-.scrollable-til-popup {
-  overflow-y: auto;
-}
-
-@media (max-widt: 1740px) {
-  /* .figure img {
-    max-width: 220px;
-  } */
-
-  .portfolio-galleri {
-    max-width: 250px;
-    grid-template-columns: 1fr;
-    /*  grid-template-rows: repeat(1, 1fr); */
-  }
-}
-@media (max-width: 1180px) {
-  .portfolio-galleri {
-    grid-template-columns: 1fr;
-    /*  grid-template-rows: repeat(1, 1fr); */
-  }
-  /*  .figure {
-    max-width: 150px;
-  } */
-  .portfolio-galleri h1 {
-    font-size: 25px;
-    margin-top: 10px;
-  }
-  .portfolio-galleri p {
-    font-size: 15px;
+@media (min-width: 600px) {
+  .om_billede,
+  .om_tekst {
+    flex-basis: 50%;
   }
 }
 
