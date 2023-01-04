@@ -17,6 +17,10 @@
   grid-gap: 40px;
   margin: 10px 20px 0 20px;
 }
+.portfolie_grid h3 {
+  color: white;
+  margin: 20px 0 20px 0;
+}
 @media (max-widt: 1740px) {
   .portfolie_grid {
     max-width: 250px;
@@ -50,7 +54,7 @@
   transition: 0.1s;
   visibility: hidden;
   z-index: 9999999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.695);
 }
 .popup-container {
   max-width: 100%;
