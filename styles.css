@@ -128,7 +128,7 @@ a {
 /* knapper design og font */
 button {
   padding: 0 10px;
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
   width: 35%;
   padding: 10px 0;
   background: transparent;

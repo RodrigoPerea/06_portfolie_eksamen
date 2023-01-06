@@ -155,134 +155,6 @@ main {
 img {
   width: 100%;
 }
-/* cv design */
-/* side-bar */
-/* billede på cv sidebar*/
-.side-pres .rodrigo {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.side-pres .rodrigo img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 15px auto;
-}
-
-.kontakt-aditionel {
-  flex-basis: 40%;
-  padding: 40px;
-}
-.cv-possition {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 19px;
-}
-.cv-year {
-  font-weight: 800;
-  font-style: normal;
-  line-height: 1.6rem;
-  font-size: 1.2rem;
-  color: #da1d57;
-}
-
-.side-pres {
-  background: #52024e00;
-  /* background-color: white; */
-  border-right: 2px solid #bdbdbd48;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 225px;
-  height: 100%;
-  padding: 20px 0;
-  padding-top: 100px;
-  overflow-x: hidden;
-  z-index: -50;
-  text-align: center;
-}
-
-.side-pres h5 {
-  color: rgb(0, 0, 0);
-  padding: 10px 0px 2px 10px;
-}
-.side-pres p {
-  color: rgb(0, 0, 0);
-  padding: 0 10px;
-}
-.rodrigo h3 {
-  color: #291b50;
-}
-.rodrigo p {
-  font-weight: 500;
-}
-/* linkedinknap side bar  - Virker ikke*/
-.linkedin {
-  padding: 0 10px;
-  margin: 10px 10px;
-}
-.linkedin:hover {
-  background: #c308b3;
-  border: none;
-  color: white;
-}
-
-/* cv erfaring tekst */
-.cv-container {
-  display: flex;
-  color: rgb(0, 0, 0);
-}
-.erfaring {
-  flex-direction: row;
-}
-.skole {
-  margin-left: 90px;
-}
-.cv-container h2 {
-  margin: 35px 0 35px;
-}
-.cv-container .cv-erfaring {
-  margin-top: 25px;
-}
-.cv-main-container {
-  margin-left: 300px;
-}
-.cv-erfaring h5 {
-  color: #291b50;
-}
-.cv-erfaring h6 {
-  border-bottom: 1px solid #291b50;
-  width: 50%;
-  padding: 5px 5px;
-}
-tr td:first-child {
-  /* Så dne kun adder padding å den første data i rækken. altså, "email", "telefon" etc. */
-  padding-right: 20px;
-}
-tr td {
-  padding-top: 15px;
-}
-.cv-possition {
-  position: relative;
-  border-bottom: 1px solid #291b50;
-  border-width: 2px;
-  justify-content: flex-start;
-  width: 85%;
-  padding: 50px 0 10px 0;
-}
-
-/* cv knapperne */
-.cv-knap {
-  width: 160px;
-  /* display: none; */
-}
-
-.cv-knap:hover {
-  background: #291b50;
-  border: none;
-  color: white;
-}
 
 /* Om Mig sektion */
 .om_container {
@@ -312,6 +184,13 @@ tr td {
   .om_tekst {
     flex-basis: 50%;
   }
+}
+.om_tekst h3 {
+  margin: 15px 0 5px 0;
+}
+.om_tekst h2 {
+  margin: 2px 0 5px 0;
+  color: #cdc3e6;
 }
 
 /* footer */

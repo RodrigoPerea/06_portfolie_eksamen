@@ -58,7 +58,7 @@
 }
 .popup-container {
   max-width: 100%;
-  width: 700px;
+  width: 900px;
   display: flex;
   background-color: #291b50;
   overflow-y: scroll;
@@ -82,11 +82,11 @@ h1 {
 .popup-content {
   display: flex;
 }
-.popup-galleri {
-  /*   column-count: 2;
-  gap: 0.5rem; */
-  /* columns: 16rem; */
-}
+/* .popup-galleri {
+  column-count: 2;
+  gap: 0.5rem;
+  columns: 16rem; 
+} */
 
 .billede_knap {
   position: relative;

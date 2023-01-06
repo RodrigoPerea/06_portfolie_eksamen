@@ -32,7 +32,7 @@
                 <a href="potfolie_remake.html" class="burger-text">Portfolie</a>
             </li>
             <li>
-                <a href="cv.html" class="burger-text">Cv</a>
+                <a href="cv_remake.html" class="burger-text">Cv</a>
             </li>
             <li>
                 <a href="om.html" class="burger-text">Om mig</a>
@@ -199,44 +199,52 @@
                 </div>
                 <div class="popup-content">
                     <div class="popup-text">
-                        <p>
-                            Alle projekter eller opgaver præsenteres vha. en kort, konkret beskrivelse af dit projekts
-                            eller
-                            din
-                            opgaves fokus, din proces, hvad din rolle var og hvad du lærte. <br> <br>
-                            I tema X har vi lært om forskellige layoutprincipper: A, B, C (her demonstrerer du viden)Jeg
-                            valgte
-                            at bruge princip B til at løse den efterfølgende opgave på følgende måde (her demonstrerer
-                            du
-                            færdighed). Jeg valgte at bruge denne løsning fremfor A & C fordi [...] (her demonstrerer du
-                            kompetence). <br> <br>
-
-                            I denne opgave blev vi introduceret til testmetoden X som går ud på... (her demonstrerer du
-                            viden).
-                            Jeg udførte testen på følgende måde [...] med følgende resultat [...] og det gav anledning
-                            til
-                            følgende ændringer [...] i mit design (her demonstrerer du færdighed). I det efterfølgende
-                            gruppeprojekt brugte vi igen testmetoden X, i forhold til at undersøge følgende [...] (her
-                            demonstrerer du kompetence). <br> <br>
-                            Vis gerne din proces, brug meget gerne screendumps, illustrationer, animationer, skitser mm.
-
+                        <h3>Help The Shrink</h3>
+                        <p>I dette tema, valge jeg at lave et spil, hvor man skal hjælpe doktoren med at kurer patienten
+                            ved at give patienten elektroshok, på det rigtige tidspunkt. Gør man ikke det, blri hans
+                            hjerne brændt af, og det kan man jo ikke holde til evigt.</p>
+                        <h3>Opbygning</h3>
+                        <p>Jeg har opbygget mit spil lidt anderledes end opgaven foreskriver. Dette var en fejl i
+                            atarten, men eferfølgende, ville jg udfrodre mig selv en smule, og foretsatte med
+                            opbygningen af spillet på denne måde.</p>
+                        <h3>Opbygning af spillet</h3>
+                        <p>Opgaven lød, vi skulle lave nogle animationer i css, og få dem tila t gøre noget når der blev
+                            trykekt forkert, eller korrekt. Dette skulle gøre ud fra nogle spille elementer vi ahvde
+                            designet. Jeg byggede istedet mit spil op i javascript, ved at generer et radom tal
+                            (getRandomArbitrary), som blir kald i mi funktion (setRandomButtonActive ) som så sætter den
+                            aktive knap til en tilfældig knap i mit array (randomValue = getRandomArbitrary(0,
+                            actionButtons.length)). <br> <a href="picturs/animation_set_radom_bottom_activ.png"> <img
+                                    src="picturs/animation_set_radom_bottom_activ.png" alt="stillbillede fra video"></a>
+                            <br> Når brugeren, trykker på en tast (tasterne 1-5),
+                            tjekker js, om
+                            knappen de trykker på har været aktiv.
+                            (checkActiveButton (ArrayInt)). Her efter retunere den true elerl false, som så blir brugt
+                            til at enten trække en plads fra i mit array (life = Array[4]) og add klassen inaktiv, eller
+                            den adder en til mit scorboard array. <img src="picturs/animation_validate_life.png"
+                                alt="pilot video, med passtion for tegning">Og den tjekker hver gang om mit mscorboard
+                            er =15 så
+                            an har vundet, eller om mit life Array = 0, så den stopper spiller (validateLifeState).
                         </p>
-                        <h3>javascript</h3>
-                        <h3>Inspector</h3>
-                        <h3>design af spillelementer og UI elementer, ide-genereringsteknikker</h3>
-                        <h3>funktioner, metoder (addClass/removeClass), variabler,events (load, click, animationend),
-                            betingelser (if-else)og math.random.</h3>
+                        <h3>Design spillelementer</h3>
+                        <p>designa f spillelementer var en spændende process, hvor jeg lært hvordan man arbejder med
+                            illustrator professionelt. JEg tegnede mine elementer op i hånden og efter i illustrator.
+                            Jeg endte dog med, at designe mine elementer i koden istedet, grudnet min fejl i
+                            opgavebeskrivelsen. Billederne af spillelementerne, var de original tænkte elementer der
+                            skulle indgå i mit spil. havde lidt vanskeligheder i starten med perspektivering, så der om
+                            dybde i bileldet, men lærte, på en må,de hvordan det evt. kunne gøres.</p>
+
+
                         <h3> figur-skitser, layout-skitser </h3>
                         <h3>UML Aktivitetsdiagrammer og state machine</h3>
                     </div>
                     <div class="popup-galleri">
-                        <a href="picturs/shit-it-up-user.png"> <img src="picturs/indhold_vide_1.png"
-                                alt="stillbillede fra video"></a>
-                        <a href="picturs/shirt-it-up-StyleTyle.png"> <img src="picturs/indhold_video_2.png"
+                        <a href="picturs/animation_spil_sceen_dump.png"> <img
+                                src="picturs/animation_spil_sceen_dump.png" alt="stillbillede fra video"></a>
+                        <a href="picturs/animation_diagram.svg"> <img src="picturs/animation_diagram.svg"
                                 alt="pilot video, med passtion for tegning"></a>
-                        <a href="picturs/shirt-it-up-design-fuktion.png"> <img src="picturs/indhold_vide_1.png"
-                                alt="stillbillede fra video"></a>
-                        <a href="picturs/shirt-it-up-xd-sceen-shot.png"><img src="picturs/indhold_video_2.png"
+                        <a href="picturs/animation_illustrator_spillebaggrund.png"> <img
+                                src="picturs/animation_illustrator_spillebaggrund.png" alt="stillbillede fra video"></a>
+                        <a href="picturs/animation_forside_u_tekst.png"><img src="picturs/animation_forside_u_tekst.png"
                                 alt="pilot video, med passtion for tegning"></a>
                     </div>
                 </div>

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.cv-wrapper {
+  max-width: 100%;
+  width: 900px;
+  display: flex;
+  border-radius: 20px;
+  padding: 40px;
+  flex-direction: column;
+  max-height: 100%;
+}
+img {
+  width: 200px;
+
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+h1,
+h2 {
+  margin-bottom: 5px;
+}
+.linkedin-cv {
+  margin: 0;
+}
+.main-info-cv {
+  margin-bottom: 20px;
+}
+
+.erfaring-cv {
+  border-bottom: 1px #291b50 solid;
+
+  margin-bottom: 20px;
+}
+.cv-wrapper h2 {
+  margin-bottom: 20px;
+}
+h6 {
+  margin-bottom: 15px;
+}
+.cv-link-knap {
+  color: #291b50;
+  margin-bottom: 15px;
+  width: auto;
+
+  /* display: none; */
+  /*  cursor: pointer; */
+}
+.linkedin {
+  width: 160px;
+}
+.linkedin:hover {
+  background: #da1d57;
+  border: none;
+  color: white;
+}
+.cv-knap {
+  width: 160px;
+  /*   display: none; */
+}
+
+.cv-knap:hover {
+  background: #da1d57;
+  border: none;
+  color: white;
+}
+@media (min-width: 800px) {
+  .cv-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .top-cv {
+    text-align: center;
+    position: fixed;
+    /* overflow: hidden; */
+  }
+  .erfaring-wrapper {
+    width: 100%;
+
+    margin: 0px 0px 0px 270px;
+  }
+}
