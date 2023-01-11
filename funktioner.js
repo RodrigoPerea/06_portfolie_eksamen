@@ -8,7 +8,7 @@ function nav() {
 
   burger.addEventListener("click", () => {
     nav.classList.toggle("show");
-    body.classList.add("noScroll");
+    /* body.classList.add("noScroll"); */
     /*  body.classList.remove("noScroll"); */
   });
 }

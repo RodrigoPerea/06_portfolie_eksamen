@@ -165,3 +165,9 @@ h1 {
     flex-basis: 50%;
   }
 }
+video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin: 10px 0 10px 0;
+}
